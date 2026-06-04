@@ -15,6 +15,11 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <!-- NEW: Exit Link for Desktop View -->
+                    <a href="/" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-orange-600 hover:text-orange-700 transition duration-150 ease-in-out">
+                        ← View Public Site
+                    </a>
                 </div>
             </div>
 
@@ -70,6 +75,11 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+
+            <!-- NEW: Exit Link for Mobile/Responsive Hamburger View -->
+            <a href="/" class="block w-full ps-3 pr-4 py-2 border-l-4 border-transparent text-left text-base font-bold text-orange-600 hover:text-orange-700 hover:bg-orange-50 focus:outline-none transition duration-150 ease-in-out">
+                ← View Public Site
+            </a>
         </div>
 
         <!-- Responsive Settings Options -->
